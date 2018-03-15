@@ -15,3 +15,15 @@ html.page-home {
 
   /*background: linear-gradient(to left, #5f2c82, #49a09d);*/
 }
+html.page-archives {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/images/blogpage.jpg');
+  background-color: transparent;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
