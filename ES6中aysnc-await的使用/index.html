@@ -15,17 +15,17 @@
     <meta name="keywords" content="ES6," />
   
 
-  <meta name="description" content="在项目中有时会遇到异步操作的问题，async就是解决异步操作的终极操作。我会以三W（what，why，how）的形式来说明什么是async。 async是什么？官方例子官方文档 async相当于对Generator 函数的一个语法糖 1234567891011121314151617const fs = require(&apos;fs&apos;);const readFile = function (fileNa">
+  <meta name="description" content="在项目中有时会遇到异步操作的问题，async就是解决异步操作的终极操作。我会以终极三问（what，why，when）的形式来说明什么是async。 async是什么？官方例子官方文档 async相当于对Generator 函数的一个语法糖 1234567891011121314151617const fs = require(&apos;fs&apos;);const readFile = function (fil">
 <meta name="keywords" content="ES6">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ES6中async await的使用">
 <meta property="og:url" content="http://yoursite.com/ES6中aysnc-await的使用/index.html">
 <meta property="og:site_name" content="myBlog">
-<meta property="og:description" content="在项目中有时会遇到异步操作的问题，async就是解决异步操作的终极操作。我会以三W（what，why，how）的形式来说明什么是async。 async是什么？官方例子官方文档 async相当于对Generator 函数的一个语法糖 1234567891011121314151617const fs = require(&apos;fs&apos;);const readFile = function (fileNa">
-<meta property="og:updated_time" content="2018-03-15T06:48:24.402Z">
+<meta property="og:description" content="在项目中有时会遇到异步操作的问题，async就是解决异步操作的终极操作。我会以终极三问（what，why，when）的形式来说明什么是async。 async是什么？官方例子官方文档 async相当于对Generator 函数的一个语法糖 1234567891011121314151617const fs = require(&apos;fs&apos;);const readFile = function (fil">
+<meta property="og:updated_time" content="2018-03-15T08:08:50.359Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ES6中async await的使用">
-<meta name="twitter:description" content="在项目中有时会遇到异步操作的问题，async就是解决异步操作的终极操作。我会以三W（what，why，how）的形式来说明什么是async。 async是什么？官方例子官方文档 async相当于对Generator 函数的一个语法糖 1234567891011121314151617const fs = require(&apos;fs&apos;);const readFile = function (fileNa">
+<meta name="twitter:description" content="在项目中有时会遇到异步操作的问题，async就是解决异步操作的终极操作。我会以终极三问（what，why，when）的形式来说明什么是async。 async是什么？官方例子官方文档 async相当于对Generator 函数的一个语法糖 1234567891011121314151617const fs = require(&apos;fs&apos;);const readFile = function (fil">
 
   
 
@@ -230,7 +230,7 @@
 
   <div class="article-content">
     
-      <p>在项目中有时会遇到异步操作的问题，async就是解决异步操作的终极操作。我会以三W（what，why，how）的形式来说明什么是async。</p>
+      <p>在项目中有时会遇到异步操作的问题，async就是解决异步操作的终极操作。我会以终极三问（what，why，when）的形式来说明什么是async。</p>
 <h2 id="async是什么？"><a href="#async是什么？" class="headerlink" title="async是什么？"></a>async是什么？</h2><h3 id="官方例子"><a href="#官方例子" class="headerlink" title="官方例子"></a>官方例子</h3><p><a href="http://es6.ruanyifeng.com/#docs/async" target="_blank" rel="noopener">官方文档</a></p>
 <p>async相当于对Generator 函数的一个语法糖</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">const fs = require(<span class="string">'fs'</span>);</span><br><span class="line"></span><br><span class="line">const readFile = <span class="keyword">function</span> (fileName) &#123;</span><br><span class="line">  <span class="built_in">return</span> new Promise(<span class="keyword">function</span> (resolve, reject) &#123;</span><br><span class="line">    fs.readFile(fileName, <span class="keyword">function</span>(error, data) &#123;</span><br><span class="line">      <span class="keyword">if</span> (error) <span class="built_in">return</span> reject(error);</span><br><span class="line">      resolve(data);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">const gen = <span class="keyword">function</span>* () &#123;</span><br><span class="line">  const f1 = yield readFile(<span class="string">'/etc/fstab'</span>);</span><br><span class="line">  const f2 = yield readFile(<span class="string">'/etc/shells'</span>);</span><br><span class="line">  console.log(f1.toString());</span><br><span class="line">  console.log(f2.toString());</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
