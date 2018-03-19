@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-post">
+
+
+<head>
+  <meta charset="utf-8">
+  
+  <title>面试中一些模糊的问题 | myBlog</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="web," />
+  
+
+  <meta name="description" content="今天去手百部门进行了一些面试，有些东西好久不用真的会慢慢的生疏，我把面试中遇到的一些问题我回答上的还有没有回答上的都列出来（需要写代码的部门必须要完全手写出来），让自己铭记有些东西不复习一下再简单也会忘的。 CSS有几种盒模型？盒模型一共有两种模式，一种是标准模式，另一种就是怪异模式。 （具体后期补充） 前端如何解决跨域问题？有几种做法vue的双向绑定原理？view到model，model到vie">
+<meta name="keywords" content="web">
+<meta property="og:type" content="article">
+<meta property="og:title" content="面试中一些模糊的问题">
+<meta property="og:url" content="http://yoursite.com/面试中一些模糊的问题/index.html">
+<meta property="og:site_name" content="myBlog">
+<meta property="og:description" content="今天去手百部门进行了一些面试，有些东西好久不用真的会慢慢的生疏，我把面试中遇到的一些问题我回答上的还有没有回答上的都列出来（需要写代码的部门必须要完全手写出来），让自己铭记有些东西不复习一下再简单也会忘的。 CSS有几种盒模型？盒模型一共有两种模式，一种是标准模式，另一种就是怪异模式。 （具体后期补充） 前端如何解决跨域问题？有几种做法vue的双向绑定原理？view到model，model到vie">
+<meta property="og:updated_time" content="2018-03-19T12:17:15.190Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="面试中一些模糊的问题">
+<meta name="twitter:description" content="今天去手百部门进行了一些面试，有些东西好久不用真的会慢慢的生疏，我把面试中遇到的一些问题我回答上的还有没有回答上的都列出来（需要写代码的部门必须要完全手写出来），让自己铭记有些东西不复习一下再简单也会忘的。 CSS有几种盒模型？盒模型一共有两种模式，一种是标准模式，另一种就是怪异模式。 （具体后期补充） 前端如何解决跨域问题？有几种做法vue的双向绑定原理？view到model，model到vie">
+
+  
+
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  <link href="/css/styles.css?v=c114cbe6" rel="stylesheet">
+
+
+  
+    <link rel="stylesheet" href="/css/page-home.css">
+  
+
+  
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?57e94d016e201fba3603a8a2b0263af0";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+  
+  <script type="text/javascript">
+	(function(){
+	    var bp = document.createElement('script');
+	    var curProtocol = window.location.protocol.split(':')[0];
+	    if (curProtocol === 'https') {
+	        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+	    }
+	    else {
+	        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+	    }
+	    var s = document.getElementsByTagName("script")[0];
+	    s.parentNode.insertBefore(bp, s);
+	})();
+  </script>
+
+
+
+  
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+
+  
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+</head>
+
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">标题</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">标题</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/archives/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            博客
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/category/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            分类
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/tag/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            标签
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/link/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            友链
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/about/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            关于
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/atom.xml"
+            rel="noopener noreferrer"
+            target="_blank"
+            >
+            RSS
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a
+            class="CIRCLE"
+            href="/search/"
+            rel="noopener noreferrer"
+            target="_self"
+            >
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS有几种盒模型？"><span class="toc-text">CSS有几种盒模型？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#前端如何解决跨域问题？有几种做法"><span class="toc-text">前端如何解决跨域问题？有几种做法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vue的双向绑定原理？view到model，model到view是如何变化的？"><span class="toc-text">vue的双向绑定原理？view到model，model到view是如何变化的？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery的源码？对源码的理解与运行机制？"><span class="toc-text">jQuery的源码？对源码的理解与运行机制？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#手机上最常见的开关按钮排版及样式"><span class="toc-text">手机上最常见的开关按钮排版及样式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vue的父子传参以及vuex的使用？项目中最常用的方法"><span class="toc-text">vue的父子传参以及vuex的使用？项目中最常用的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ES6中async和promise的用法"><span class="toc-text">ES6中async和promise的用法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#闭包的优点与缺点，写出事例：给每个li便签加点击事件，点击后输出对应的index？"><span class="toc-text">闭包的优点与缺点，写出事例：给每个li便签加点击事件，点击后输出对应的index？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#模块化思想？seaJs与requireJs的一些区别"><span class="toc-text">模块化思想？seaJs与requireJs的一些区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#写一个person-39-li-39-39-lei-39-的类要求："><span class="toc-text">写一个person(&#39;li&#39;,&#39;lei&#39;)的类要求：</span></a></li></ol>
+  </div>
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-面试中一些模糊的问题" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">面试中一些模糊的问题</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2018.03.19</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>WeiLeilei</span>
+        </span>
+      
+
+      
+
+
+      
+        <span>
+          <i class="icon-comment"></i>
+          <a href="http://www.forsigner.com/面试中一些模糊的问题/#disqus_thread"></a>
+        </span>
+      
+
+      
+      <i class="fa fa-eye"></i> 
+        <span id="busuanzi_container_page_pv">
+           &nbsp热度 <span id="busuanzi_value_page_pv">
+           <i class="fa fa-spinner fa-spin"></i></span>℃
+        </span>
+      
+      
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <p>今天去手百部门进行了一些面试，有些东西好久不用真的会慢慢的生疏，我把面试中遇到的一些问题我回答上的还有没有回答上的都列出来（需要写代码的部门必须要完全手写出来），让自己铭记有些东西不复习一下再简单也会忘的。</p>
+<h2 id="CSS有几种盒模型？"><a href="#CSS有几种盒模型？" class="headerlink" title="CSS有几种盒模型？"></a><code>CSS</code>有几种盒模型？</h2><p>盒模型一共有两种模式，一种是标准模式，另一种就是怪异模式。</p>
+<p>（具体后期补充）</p>
+<h2 id="前端如何解决跨域问题？有几种做法"><a href="#前端如何解决跨域问题？有几种做法" class="headerlink" title="前端如何解决跨域问题？有几种做法"></a>前端如何解决跨域问题？有几种做法</h2><h2 id="vue的双向绑定原理？view到model，model到view是如何变化的？"><a href="#vue的双向绑定原理？view到model，model到view是如何变化的？" class="headerlink" title="vue的双向绑定原理？view到model，model到view是如何变化的？"></a><code>vue</code>的双向绑定原理？<code>view</code>到<code>model</code>，<code>model</code>到<code>view</code>是如何变化的？</h2><h2 id="jQuery的源码？对源码的理解与运行机制？"><a href="#jQuery的源码？对源码的理解与运行机制？" class="headerlink" title="jQuery的源码？对源码的理解与运行机制？"></a><code>jQuery</code>的源码？对源码的理解与运行机制？</h2><h2 id="手机上最常见的开关按钮排版及样式"><a href="#手机上最常见的开关按钮排版及样式" class="headerlink" title="手机上最常见的开关按钮排版及样式"></a>手机上最常见的开关按钮排版及样式</h2><h2 id="vue的父子传参以及vuex的使用？项目中最常用的方法"><a href="#vue的父子传参以及vuex的使用？项目中最常用的方法" class="headerlink" title="vue的父子传参以及vuex的使用？项目中最常用的方法"></a><code>vue</code>的父子传参以及<code>vuex</code>的使用？项目中最常用的方法</h2><h2 id="ES6中async和promise的用法"><a href="#ES6中async和promise的用法" class="headerlink" title="ES6中async和promise的用法"></a><code>ES6</code>中<code>async</code>和<code>promise</code>的用法</h2><h2 id="闭包的优点与缺点，写出事例：给每个li便签加点击事件，点击后输出对应的index？"><a href="#闭包的优点与缺点，写出事例：给每个li便签加点击事件，点击后输出对应的index？" class="headerlink" title="闭包的优点与缺点，写出事例：给每个li便签加点击事件，点击后输出对应的index？"></a>闭包的优点与缺点，写出事例：给每个li便签加点击事件，点击后输出对应的<code>index</code>？</h2><h2 id="模块化思想？seaJs与requireJs的一些区别"><a href="#模块化思想？seaJs与requireJs的一些区别" class="headerlink" title="模块化思想？seaJs与requireJs的一些区别"></a>模块化思想？<code>seaJs</code>与<code>requireJs</code>的一些区别</h2><h2 id="写一个person-39-li-39-39-lei-39-的类要求："><a href="#写一个person-39-li-39-39-lei-39-的类要求：" class="headerlink" title="写一个person(&#39;li&#39;,&#39;lei&#39;)的类要求："></a>写一个<code>person(&#39;li&#39;,&#39;lei&#39;)</code>的类要求：</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(person.name);</span><br><span class="line"><span class="comment">// 输出 ‘li lei’</span></span><br><span class="line"></span><br><span class="line">person.name = <span class="string">'li hua'</span>;</span><br><span class="line"><span class="comment">// 改变person的名字</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(person.firstName);</span><br><span class="line"><span class="comment">// 'li'</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(person.lastName);</span><br><span class="line"><span class="comment">// 'hua'</span></span><br></pre></td></tr></table></figure>
+    
+  </div>
+
+  
+      <div class="git"></div>
+  
+
+</article>
+
+
+   
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，支持weileilei</div>
+        <ul>
+        
+          <li class="item">
+            <span>微信扫一扫</span>
+            <img src="/images/wechat.JPG" alt="">
+          </li>
+        
+          <li class="item">
+            <span>支付宝扫一扫</span>
+            <img src="/images/alipay.JPG" alt="">
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+   
+  <div class="box-prev-next clearfix">
+    <a class="show pull-left" href="/ES6中aysnc-await的使用/">
+        <i class="icon icon-angle-left"></i>
+    </a>
+    <a class="hide pull-right" href="/">
+        <i class="icon icon-angle-right"></i>
+    </a>
+  </div>
+
+
+
+
+</div>
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">关闭</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/archives/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              博客
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/category/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              分类
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/tag/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              标签
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/link/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              友链
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/about/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              关于
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/atom.xml"
+              rel="noopener noreferrer"
+              target="_blank"
+              >
+              RSS
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a
+              class="CIRCLE"
+              href="/search/"
+              rel="noopener noreferrer"
+              target="_self"
+              >
+              搜索
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+  <section class="disqus-comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </section>
+
+  <script>
+    var disqus_shortname = 'forsigner';
+    
+    var disqus_url = 'http://yoursite.com/面试中一些模糊的问题/';
+    
+    (function(){
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+
+  <script id="dsq-count-scr" src="//forsigner.disqus.com/count.js" async></script>
+
+
+
+    
+    
+
+    
+    
+
+    
+
+    
+    
+
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+</body>
+</html>
