@@ -39,3 +39,9 @@ html.page-tag,html.page-category,html.page-about {
   background-position: center center;
   background-repeat: no-repeat;
 }
+
+.article-type-post {
+  box-shadow: 5px 5px 20px #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
