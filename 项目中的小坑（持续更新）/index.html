@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>项目中的小坑（持续更新） | myBlog</title>
+  <title>项目中的小坑与心得（持续更新） | myBlog</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -15,17 +15,17 @@
     <meta name="keywords" content="前端," />
   
 
-  <meta name="description" content="刚开始开发项目，项目中总有一些你不知道的小坑，我就总结一下。因为项目一直在开发，所以会随时更新，会像一个小的项目笔记。 1.fix3-parser-vue-component &amp;gt;= 4.x &amp;lt; 5.x才支持vue 1.x。2.查看全局包命令 npm root -g">
+  <meta name="description" content="刚开始开发项目，项目中总有一些你不知道的小坑，我就总结一下。因为项目一直在开发，所以会随时更新，会像一个小的项目笔记。 1.fix3-parser-vue-component &amp;gt;= 4.x &amp;lt; 5.x支持vue 1.x。2.查看全局包命令 npm root -g3.‘~’：js安位非运算符1~1 == -2 那么这个值是怎么来的呢？  将1(这里叫：原码)转二进制 ＝ 00000001">
 <meta name="keywords" content="前端">
 <meta property="og:type" content="article">
-<meta property="og:title" content="项目中的小坑（持续更新）">
+<meta property="og:title" content="项目中的小坑与心得（持续更新）">
 <meta property="og:url" content="http://weileilei.top/项目中的小坑（持续更新）/index.html">
 <meta property="og:site_name" content="myBlog">
-<meta property="og:description" content="刚开始开发项目，项目中总有一些你不知道的小坑，我就总结一下。因为项目一直在开发，所以会随时更新，会像一个小的项目笔记。 1.fix3-parser-vue-component &amp;gt;= 4.x &amp;lt; 5.x才支持vue 1.x。2.查看全局包命令 npm root -g">
-<meta property="og:updated_time" content="2018-03-30T02:34:11.789Z">
+<meta property="og:description" content="刚开始开发项目，项目中总有一些你不知道的小坑，我就总结一下。因为项目一直在开发，所以会随时更新，会像一个小的项目笔记。 1.fix3-parser-vue-component &amp;gt;= 4.x &amp;lt; 5.x支持vue 1.x。2.查看全局包命令 npm root -g3.‘~’：js安位非运算符1~1 == -2 那么这个值是怎么来的呢？  将1(这里叫：原码)转二进制 ＝ 00000001">
+<meta property="og:updated_time" content="2018-04-01T08:30:02.519Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="项目中的小坑（持续更新）">
-<meta name="twitter:description" content="刚开始开发项目，项目中总有一些你不知道的小坑，我就总结一下。因为项目一直在开发，所以会随时更新，会像一个小的项目笔记。 1.fix3-parser-vue-component &amp;gt;= 4.x &amp;lt; 5.x才支持vue 1.x。2.查看全局包命令 npm root -g">
+<meta name="twitter:title" content="项目中的小坑与心得（持续更新）">
+<meta name="twitter:description" content="刚开始开发项目，项目中总有一些你不知道的小坑，我就总结一下。因为项目一直在开发，所以会随时更新，会像一个小的项目笔记。 1.fix3-parser-vue-component &amp;gt;= 4.x &amp;lt; 5.x支持vue 1.x。2.查看全局包命令 npm root -g3.‘~’：js安位非运算符1~1 == -2 那么这个值是怎么来的呢？  将1(这里叫：原码)转二进制 ＝ 00000001">
 
   
 
@@ -182,12 +182,17 @@
 </div>
 
 
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">Posts List</strong>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-fix3-parser-vue-component-gt-4-x-lt-5-x支持vue-1-x。"><span class="toc-text">1.fix3-parser-vue-component &gt;= 4.x &lt; 5.x支持vue 1.x。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-查看全局包命令-npm-root-g"><span class="toc-text">2.查看全局包命令 npm root -g</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-‘-’：js安位非运算符"><span class="toc-text">3.‘~’：js安位非运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-发现一个不错的写法"><span class="toc-text">4.发现一个不错的写法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-提取URL的参数"><span class="toc-text">5.提取URL的参数</span></a></li></ol>
+  </div>
+
 
 
 <div class="content content-post CENTER">
    <article id="post-项目中的小坑（持续更新）" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">项目中的小坑（持续更新）</h1>
+    <h1 class="post-title">项目中的小坑与心得（持续更新）</h1>
 
     <div class="article-meta">
       <span>
@@ -226,7 +231,17 @@
   <div class="article-content">
     
       <p>刚开始开发项目，项目中总有一些你不知道的小坑，我就总结一下。因为项目一直在开发，所以会随时更新，会像一个小的项目笔记。</p>
-<p>1.fix3-parser-vue-component &gt;= 4.x &lt; 5.x才支持vue 1.x。<br>2.查看全局包命令 npm root -g</p>
+<h3 id="1-fix3-parser-vue-component-gt-4-x-lt-5-x支持vue-1-x。"><a href="#1-fix3-parser-vue-component-gt-4-x-lt-5-x支持vue-1-x。" class="headerlink" title="1.fix3-parser-vue-component &gt;= 4.x &lt; 5.x支持vue 1.x。"></a>1.fix3-parser-vue-component &gt;= 4.x &lt; 5.x支持vue 1.x。</h3><h3 id="2-查看全局包命令-npm-root-g"><a href="#2-查看全局包命令-npm-root-g" class="headerlink" title="2.查看全局包命令 npm root -g"></a>2.查看全局包命令 npm root -g</h3><h3 id="3-‘-’：js安位非运算符"><a href="#3-‘-’：js安位非运算符" class="headerlink" title="3.‘~’：js安位非运算符"></a>3.‘~’：js安位非运算符</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~<span class="number">1</span> == <span class="number">-2</span></span><br></pre></td></tr></table></figure>
+<p>那么这个值是怎么来的呢？</p>
+<ul>
+<li>将<code>1</code>(这里叫：原码)转二进制 ＝ <code>00000001</code></li>
+<li>按位取反 ＝ <code>11111110</code></li>
+<li>发现符号位(即最高位)为<code>1</code>(表示负数)，将除符号位之外的其他数字取反 ＝ <code>10000001</code></li>
+<li>末位加1取其补码 ＝ <code>10000010</code></li>
+<li>转换回十进制 ＝ <code>-2</code></li>
+</ul>
+<h3 id="4-发现一个不错的写法"><a href="#4-发现一个不错的写法" class="headerlink" title="4.发现一个不错的写法"></a>4.发现一个不错的写法</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> whiteList = res.data.whiteList;</span><br><span class="line"><span class="keyword">let</span> params = &#123;&#125;;</span><br><span class="line">whiteList &amp;&amp; (params.whiteType = whiteList === <span class="number">1</span> ? <span class="number">2</span> : <span class="number">3</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="5-提取URL的参数"><a href="#5-提取URL的参数" class="headerlink" title="5.提取URL的参数"></a>5.提取URL的参数</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> = searvh = location.search.length ? location.serach.substr(<span class="number">1</span>) : <span class="string">""</span>;</span><br><span class="line"><span class="keyword">let</span> obj = &#123;&#125;;</span><br><span class="line"><span class="keyword">if</span> (serach.length) &#123;</span><br><span class="line">    <span class="keyword">let</span> arr = search.split(<span class="string">"&amp;"</span>);</span><br><span class="line">    arr.foreach(<span class="function"><span class="params">item</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">let</span> tempArr = item.split(<span class="string">'='</span>);</span><br><span class="line">        <span class="keyword">let</span> [key, value] = tempArr;</span><br><span class="line">        obj[key] = value;</span><br><span class="line">        &#125;)</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> obj;</span><br></pre></td></tr></table></figure>
 
     
   </div>
@@ -289,7 +304,7 @@
   <span id="cover" class="cover hide"></span>
   <div id="modal-dialog" class="modal-dialog hide-dialog">
     <div class="modal-header">
-      <span id="close" class="btn-close">关闭</span>
+      <span id="close" class="btn-close">Close</span>
     </div>
     <hr>
     <div class="modal-body">
