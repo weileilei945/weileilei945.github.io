@@ -21,7 +21,7 @@
 <meta property="og:url" content="http://weileilei.top/初学Node，总结一些分散点/index.html">
 <meta property="og:site_name" content="myBlog">
 <meta property="og:description" content="会JS了不起啊！对!会JS真的了不起，JS可以写前端，JS可以写后端，JS可以写客户端，JS还可以写区块链应用，JS还可以写操作系统。大家都说JS是奇淫技巧，但是JS真的是一门可以深学的语言。NodeJS就是用JS来写后台的常用工具。刚开始学习Node，目前呢我的计划是先学习阿里的《7天学会NodeJS》，然后学习《深入浅出NODEJS》，先对Node有个浅显的概念然后开始深入的了解。现在的项目中">
-<meta property="og:updated_time" content="2018-04-04T14:42:36.861Z">
+<meta property="og:updated_time" content="2018-04-08T03:26:37.540Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="初学Node，总结一些分散点">
 <meta name="twitter:description" content="会JS了不起啊！对!会JS真的了不起，JS可以写前端，JS可以写后端，JS可以写客户端，JS还可以写区块链应用，JS还可以写操作系统。大家都说JS是奇淫技巧，但是JS真的是一门可以深学的语言。NodeJS就是用JS来写后台的常用工具。刚开始学习Node，目前呢我的计划是先学习阿里的《7天学会NodeJS》，然后学习《深入浅出NODEJS》，先对Node有个浅显的概念然后开始深入的了解。现在的项目中">
@@ -183,7 +183,7 @@
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#模块初始化"><span class="toc-text">模块初始化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#模块路径解析规则"><span class="toc-text">模块路径解析规则</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#模块初始化"><span class="toc-text">模块初始化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#模块路径解析规则"><span class="toc-text">模块路径解析规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看Node安装包的路径"><span class="toc-text">查看Node安装包的路径</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Node安装包时会扁平化安装"><span class="toc-text">Node安装包时会扁平化安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#npm的一些常用命令"><span class="toc-text">npm的一些常用命令</span></a></li></ol>
   </div>
 
 
@@ -232,6 +232,25 @@
       <p>会<code>JS</code>了不起啊！对!会<code>JS</code>真的了不起，<code>JS</code>可以写前端，<code>JS</code>可以写后端，<code>JS</code>可以写客户端，<code>JS</code>还可以写区块链应用，<code>JS</code>还可以写操作系统。大家都说<code>JS</code>是奇淫技巧，但是<code>JS</code>真的是一门可以深学的语言。NodeJS就是用<code>JS</code>来写后台的常用工具。<br>刚开始学习Node，目前呢我的计划是先学习阿里的《7天学会NodeJS》，然后学习《深入浅出NODEJS》，先对Node有个浅显的概念然后开始深入的了解。现在的项目中虽然有Node的开发环节，但是我在Node中真的是小白，所以不对Node进行开发。‘学好’Node真的有很大的价值，我记得在1年前的面试中就有面试官提到，Node不是让你简简单单的用一个Express来起个服务，MySql弄个增删改查就行了。作为一个合格的前端Node是自己的必备技能。</p>
 <h2 id="模块初始化"><a href="#模块初始化" class="headerlink" title="模块初始化"></a>模块初始化</h2><p>一个模块中的JS代码仅在模块第一次被使用时执行一次，并在执行过程中初始化模块的导出对象。之后，缓存起来的导出对象被重复利用。<br>简单的说就是被多次引用的模块，每次引用并不会因为引用的对象不同而初始化模块的变量。换句话说，相同模块中的变量是共享的。</p>
 <h2 id="模块路径解析规则"><a href="#模块路径解析规则" class="headerlink" title="模块路径解析规则"></a>模块路径解析规则</h2><p>我们已经知道，require函数支持斜杠（<code>/</code>）或盘符（<code>C:</code>）开头的绝对路径，也支持./开头的相对路径。但这两种路径在模块之间建立了强耦合关系，一旦某个模块文件的存放位置需要变更，使用该模块的其它模块的代码也需要跟着调整，变得牵一发动全身。因此，require函数支持第三种形式的路径，写法类似于<code>foo/bar</code>，并依次按照以下规则解析路径，直到找到模块位置。</p>
+<h2 id="查看Node安装包的路径"><a href="#查看Node安装包的路径" class="headerlink" title="查看Node安装包的路径"></a>查看Node安装包的路径</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm root -g</span><br></pre></td></tr></table></figure>
+<h2 id="Node安装包时会扁平化安装"><a href="#Node安装包时会扁平化安装" class="headerlink" title="Node安装包时会扁平化安装"></a>Node安装包时会扁平化安装</h2><p>如此一来，用户只需关心自己直接使用的三方包，不需要自己去解决所有包的依赖关系。</p>
+<h2 id="npm的一些常用命令"><a href="#npm的一些常用命令" class="headerlink" title="npm的一些常用命令"></a>npm的一些常用命令</h2><p>除了本章介绍的部分外，NPM还提供了很多功能，<code>package.json</code>里也有很多其它有用的字段。除了可以在npmjs.org/doc/查看官方文档外，这里再介绍一些NPM常用命令。</p>
+<ul>
+<li><p>NPM提供了很多命令，例如install和publish，使用npm help可查看所有命令。</p>
+</li>
+<li><p>使用<code>npm help &lt;command&gt;</code>可查看某条命令的详细帮助，例如<code>npm help install</code>。</p>
+</li>
+<li><p>在<code>package.json</code>所在目录下使用<code>npm install . -g</code>可先在本地安装当前命令行程序，可用于发布前的本地测试。</p>
+</li>
+<li><p>使用<code>npm update &lt;package&gt;</code>可以把当前目录下<code>node_modules</code>子目录里边的对应模块更新至最新版本。</p>
+</li>
+<li><p>使用<code>npm update &lt;package&gt; -g</code>可以把全局安装的对应命令行程序更新至最新版。</p>
+</li>
+<li><p>使用<code>npm cache clear</code>可以清空NPM本地缓存，用于对付使用相同版本号发布新版本代码的人。</p>
+</li>
+<li><p>使用<code>npm unpublish &lt;package&gt;@&lt;version&gt;</code>可以撤销发布自己发布过的某个版本代码。</p>
+</li>
+</ul>
 
     
   </div>
