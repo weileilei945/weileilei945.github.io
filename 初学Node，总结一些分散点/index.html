@@ -21,7 +21,7 @@
 <meta property="og:url" content="http://weileilei.top/初学Node，总结一些分散点/index.html">
 <meta property="og:site_name" content="myBlog">
 <meta property="og:description" content="会JS了不起啊！对!会JS真的了不起，JS可以写前端，JS可以写后端，JS可以写客户端，JS还可以写区块链应用，JS还可以写操作系统。大家都说JS是奇淫技巧，但是JS真的是一门可以深学的语言。NodeJS就是用JS来写后台的常用工具。刚开始学习Node，目前呢我的计划是先学习阿里的《7天学会NodeJS》，然后学习《深入浅出NODEJS》，先对Node有个浅显的概念然后开始深入的了解。现在的项目中">
-<meta property="og:updated_time" content="2018-04-08T03:26:37.540Z">
+<meta property="og:updated_time" content="2018-04-16T12:52:44.843Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="初学Node，总结一些分散点">
 <meta name="twitter:description" content="会JS了不起啊！对!会JS真的了不起，JS可以写前端，JS可以写后端，JS可以写客户端，JS还可以写区块链应用，JS还可以写操作系统。大家都说JS是奇淫技巧，但是JS真的是一门可以深学的语言。NodeJS就是用JS来写后台的常用工具。刚开始学习Node，目前呢我的计划是先学习阿里的《7天学会NodeJS》，然后学习《深入浅出NODEJS》，先对Node有个浅显的概念然后开始深入的了解。现在的项目中">
@@ -183,7 +183,7 @@
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#模块初始化"><span class="toc-text">模块初始化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#模块路径解析规则"><span class="toc-text">模块路径解析规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看Node安装包的路径"><span class="toc-text">查看Node安装包的路径</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Node安装包时会扁平化安装"><span class="toc-text">Node安装包时会扁平化安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#npm的一些常用命令"><span class="toc-text">npm的一些常用命令</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#模块初始化"><span class="toc-text">模块初始化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#模块路径解析规则"><span class="toc-text">模块路径解析规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看Node安装包的路径"><span class="toc-text">查看Node安装包的路径</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Node安装包时会扁平化安装"><span class="toc-text">Node安装包时会扁平化安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#npm的一些常用命令"><span class="toc-text">npm的一些常用命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Node可以操作文件"><span class="toc-text">Node可以操作文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Buffer"><span class="toc-text">Buffer</span></a></li></ol>
   </div>
 
 
@@ -251,6 +251,12 @@
 <li><p>使用<code>npm unpublish &lt;package&gt;@&lt;version&gt;</code>可以撤销发布自己发布过的某个版本代码。</p>
 </li>
 </ul>
+<h2 id="Node可以操作文件"><a href="#Node可以操作文件" class="headerlink" title="Node可以操作文件"></a>Node可以操作文件</h2><p>使用fs模块可以对文件进行一写基本的操作</p>
+<p>简单的复制文件<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">copy</span>(<span class="params">src, dst</span>) </span>&#123;</span><br><span class="line">    fs.writeFileSync(dst, fs.readFileSync(src));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">main</span>(<span class="params">argv</span>) </span>&#123;</span><br><span class="line">    copy(argv[<span class="number">0</span>], argv[<span class="number">1</span>]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">main(process.argv.slice(<span class="number">2</span>));</span><br></pre></td></tr></table></figure></p>
+<p>这个方法只适合小文件的拷贝，如果大文件使用这个方法内存会爆仓。我自己的理解计算机会把文件全部都读取完后再进行写，就好比让一个人去吃东西，一次让他吃完再消化会撑死他，那么我们就让他吃点然后就消化点，这样就有了下面的方法。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">copy</span>(<span class="params">src, dst</span>) </span>&#123;</span><br><span class="line">    fs.createReadStream(src).pipe(fs.createWriteStream(dst));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">main</span>(<span class="params">argv</span>) </span>&#123;</span><br><span class="line">    copy(argv[<span class="number">0</span>], argv[<span class="number">1</span>]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">main(process.argv.slice(<span class="number">2</span>));</span><br></pre></td></tr></table></figure>
+<p>使用过gulp的同学都知道pipe这个概念，这个就相当于是一个管道用来连接方法的。</p>
+<h2 id="Buffer"><a href="#Buffer" class="headerlink" title="Buffer"></a>Buffer</h2><p>Buffer与字符串有一个重要区别。字符串是只读的，并且对字符串的任何修改得到的都是一个新字符串，原字符串保持不变,至于Buffer，更像是可以做指针操作的C语言数组。slice在数组的处理中我们都知道他会返回一个新的数组，而.slice方法也不是返回一个新的Buffer，而更像是返回了指向原Buffer中间的某个位置的指针。</p>
 
     
   </div>
