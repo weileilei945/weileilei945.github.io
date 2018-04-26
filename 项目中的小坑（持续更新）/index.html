@@ -22,7 +22,7 @@
 <meta property="og:url" content="http://weileilei.top/项目中的小坑（持续更新）/index.html">
 <meta property="og:site_name" content="myBlog">
 <meta property="og:description" content="刚开始开发项目，项目中总有一些你不知道的小坑，我就总结一下。因为项目一直在开发，所以会随时更新，会像一个小的项目笔记。 1.fix3-parser-vue-component &amp;gt;= 4.x &amp;lt; 5.x支持vue 1.x。2.查看全局包命令 npm root -g3.‘~’：js安位非运算符1~1 == -2 那么这个值是怎么来的呢？  将1(这里叫：原码)转二进制 ＝ 00000001">
-<meta property="og:updated_time" content="2018-04-18T13:53:53.636Z">
+<meta property="og:updated_time" content="2018-04-26T07:42:18.707Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="项目中的小坑与心得（持续更新）">
 <meta name="twitter:description" content="刚开始开发项目，项目中总有一些你不知道的小坑，我就总结一下。因为项目一直在开发，所以会随时更新，会像一个小的项目笔记。 1.fix3-parser-vue-component &amp;gt;= 4.x &amp;lt; 5.x支持vue 1.x。2.查看全局包命令 npm root -g3.‘~’：js安位非运算符1~1 == -2 那么这个值是怎么来的呢？  将1(这里叫：原码)转二进制 ＝ 00000001">
@@ -183,8 +183,8 @@
 
 
   <div id="toc" class="toc-article">
-    <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-fix3-parser-vue-component-gt-4-x-lt-5-x支持vue-1-x。"><span class="toc-text">1.fix3-parser-vue-component &gt;= 4.x &lt; 5.x支持vue 1.x。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-查看全局包命令-npm-root-g"><span class="toc-text">2.查看全局包命令 npm root -g</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-‘-’：js安位非运算符"><span class="toc-text">3.‘~’：js安位非运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-发现一个不错的写法"><span class="toc-text">4.发现一个不错的写法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-提取URL的参数"><span class="toc-text">5.提取URL的参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-路径跳转"><span class="toc-text">6.路径跳转</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-elementUI-表单验证时，表单数据为多层结构时验证失败"><span class="toc-text">7.elementUI,表单验证时，表单数据为多层结构时验证失败</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-npm的i-apify"><span class="toc-text">8.npm的i-apify</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-elementUI一些规范问题"><span class="toc-text">9.elementUI一些规范问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-vue组件的闭合风格问题"><span class="toc-text">10.vue组件的闭合风格问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-上线代码时，检查没有删除的样式"><span class="toc-text">11.上线代码时，检查没有删除的样式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-移动端测试"><span class="toc-text">12.移动端测试</span></a></li></ol>
+    <strong class="toc-title">Posts List</strong>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-fix3-parser-vue-component-gt-4-x-lt-5-x支持vue-1-x。"><span class="toc-text">1.fix3-parser-vue-component &gt;= 4.x &lt; 5.x支持vue 1.x。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-查看全局包命令-npm-root-g"><span class="toc-text">2.查看全局包命令 npm root -g</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-‘-’：js安位非运算符"><span class="toc-text">3.‘~’：js安位非运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-发现一个不错的写法"><span class="toc-text">4.发现一个不错的写法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-提取URL的参数"><span class="toc-text">5.提取URL的参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-路径跳转"><span class="toc-text">6.路径跳转</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-elementUI-表单验证时，表单数据为多层结构时验证失败"><span class="toc-text">7.elementUI,表单验证时，表单数据为多层结构时验证失败</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-npm的i-apify"><span class="toc-text">8.npm的i-apify</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-elementUI一些规范问题"><span class="toc-text">9.elementUI一些规范问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-vue组件的闭合风格问题"><span class="toc-text">10.vue组件的闭合风格问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-上线代码时，检查没有删除的样式"><span class="toc-text">11.上线代码时，检查没有删除的样式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-移动端测试"><span class="toc-text">12.移动端测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#13-组件传参时也可以结构赋值"><span class="toc-text">13.组件传参时也可以结构赋值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#14-好好学习结构赋值"><span class="toc-text">14.好好学习结构赋值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#15-vue出了自己的官方UI组件"><span class="toc-text">15.vue出了自己的官方UI组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#16-vuex-router-sync"><span class="toc-text">16.vuex-router-sync</span></a></li></ol>
   </div>
 
 
@@ -252,7 +252,9 @@
 <h3 id="10-vue组件的闭合风格问题"><a href="#10-vue组件的闭合风格问题" class="headerlink" title="10.vue组件的闭合风格问题"></a>10.vue组件的闭合风格问题</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 在单文件组件、字符串模板和 JSX 中 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">MyComponent</span>/&gt;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 在 DOM 模板中 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">my-component</span>&gt;</span><span class="tag">&lt;/<span class="name">my-component</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h3 id="11-上线代码时，检查没有删除的样式"><a href="#11-上线代码时，检查没有删除的样式" class="headerlink" title="11.上线代码时，检查没有删除的样式"></a>11.上线代码时，检查没有删除的样式</h3><p>因为做的是移动端自适应的，刚开始页面排版时有些东西写死了，测试的时候忘记删除，这也应该记住</p>
-<h3 id="12-移动端测试"><a href="#12-移动端测试" class="headerlink" title="12.移动端测试"></a>12.移动端测试</h3><p>1.手机测试的时候关闭广告拦截功能，今天项目测试时，页面一直打不开，一直以为是js报错，等爱神出现让我查看日志时才发现，一直都没有请求日志，肯定不是我们的问题。然后就开始一直鼓捣手机，把广告拦截关闭后页面才出来。因为是测试环境，页面的url是以自己的机器名为开头的，估计把页面当成是广告全部给拦截掉了，所以导致页面什么都没有（大坑）。<br>2.小米手机不支持vue的backgroundImage行内样式，如果有需要动态创建的背景图片可以通过模板渲染进页面中<br>3.background-size在安卓手机下有问题，</p>
+<h3 id="12-移动端测试"><a href="#12-移动端测试" class="headerlink" title="12.移动端测试"></a>12.移动端测试</h3><p>1.手机测试的时候关闭广告拦截功能，今天项目测试时，页面一直打不开，一直以为是js报错，等爱神出现让我查看日志时才发现，一直都没有请求日志，肯定不是我们的问题。然后就开始一直鼓捣手机，把广告拦截关闭后页面才出来。因为是测试环境，页面的url是以自己的机器名为开头的，估计把页面当成是广告全部给拦截掉了，所以导致页面什么都没有（大坑）。<br>2.小米手机不支持vue的backgroundImage行内样式，如果有需要动态创建的背景图片可以通过模板渲染进页面中<br>3.background-size在安卓手机下有问题</p>
+<h3 id="13-组件传参时也可以结构赋值"><a href="#13-组件传参时也可以结构赋值" class="headerlink" title="13.组件传参时也可以结构赋值"></a>13.组件传参时也可以结构赋值</h3><h3 id="14-好好学习结构赋值"><a href="#14-好好学习结构赋值" class="headerlink" title="14.好好学习结构赋值"></a>14.好好学习结构赋值</h3><h3 id="15-vue出了自己的官方UI组件"><a href="#15-vue出了自己的官方UI组件" class="headerlink" title="15.vue出了自己的官方UI组件"></a>15.vue出了自己的官方UI组件</h3><p><a href="https://vuejs.github.io/ui/#/" target="_blank" rel="noopener">VUE官方UI组件</a></p>
+<h3 id="16-vuex-router-sync"><a href="#16-vuex-router-sync" class="headerlink" title="16.vuex-router-sync"></a>16.vuex-router-sync</h3><p><a href="https://github.com/vuejs/vuex-router-sync" target="_blank" rel="noopener">VUEX_ROUTER_SYNC</a><br>当使用vuex时，可以用<code>vuex-router-sync</code>，可以把路由的参数放进state里面。</p>
 
     
   </div>
@@ -315,7 +317,7 @@
   <span id="cover" class="cover hide"></span>
   <div id="modal-dialog" class="modal-dialog hide-dialog">
     <div class="modal-header">
-      <span id="close" class="btn-close">关闭</span>
+      <span id="close" class="btn-close">Close</span>
     </div>
     <hr>
     <div class="modal-body">
