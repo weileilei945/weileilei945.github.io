@@ -21,7 +21,7 @@
 <meta property="og:url" content="http://weileilei.top/项目一期心得/index.html">
 <meta property="og:site_name" content="myBlog">
 <meta property="og:description" content="在场景端做的第一项目的一期内容后很多的感悟。首先，从代码规范上来讲，自己写的代码太随心所欲。从整洁度上来说，不利于代码的可读性。 注释以及多余的代码没有及时的删除由于刚开始写项目交互时先写好了注释内容，但在项目进行时，发现有的方法多余，开发后忘记删除旧的注释内容，导致别人读取代码时逻辑混淆。使用完console和debugger时要记住删除，不然会暴露代码。尽量使用页面打断点的方法。 严格遵循代码">
-<meta property="og:updated_time" content="2018-04-26T08:33:36.908Z">
+<meta property="og:updated_time" content="2018-05-09T14:58:26.079Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="项目一期心得">
 <meta name="twitter:description" content="在场景端做的第一项目的一期内容后很多的感悟。首先，从代码规范上来讲，自己写的代码太随心所欲。从整洁度上来说，不利于代码的可读性。 注释以及多余的代码没有及时的删除由于刚开始写项目交互时先写好了注释内容，但在项目进行时，发现有的方法多余，开发后忘记删除旧的注释内容，导致别人读取代码时逻辑混淆。使用完console和debugger时要记住删除，不然会暴露代码。尽量使用页面打断点的方法。 严格遵循代码">
@@ -182,8 +182,8 @@
 
 
   <div id="toc" class="toc-article">
-    <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#注释以及多余的代码没有及时的删除"><span class="toc-text">注释以及多余的代码没有及时的删除</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#严格遵循代码命名规则"><span class="toc-text">严格遵循代码命名规则</span></a></li></ol>
+    <strong class="toc-title">Posts List</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#注释以及多余的代码没有及时的删除"><span class="toc-text">注释以及多余的代码没有及时的删除</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#严格遵循代码命名规则"><span class="toc-text">严格遵循代码命名规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#多使用解构赋值"><span class="toc-text">多使用解构赋值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#做项目的时候发现遗漏点时用笔记住"><span class="toc-text">做项目的时候发现遗漏点时用笔记住</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#下一期目标学习微信小程序，React"><span class="toc-text">下一期目标学习微信小程序，React</span></a></li></ol>
   </div>
 
 
@@ -234,6 +234,9 @@
 <h2 id="严格遵循代码命名规则"><a href="#严格遵循代码命名规则" class="headerlink" title="严格遵循代码命名规则"></a>严格遵循代码命名规则</h2><p>1.变量名使用Camel命名法<br>2.常量使用<code>全部字母大写</code>，<code>单词下划线分割</code>的命名方法<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> HTML_DIV</span><br></pre></td></tr></table></figure></p>
 <p>3.函数、函数的参数、类的属性、方法使用Camel命名法<br>4.类、枚举变量使用Pascal命名法<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span>  TargetState= &#123;</span><br><span class="line">    READING: <span class="number">1</span>,</span><br><span class="line">    READED: <span class="number">2</span>,</span><br><span class="line">    APPLIED: <span class="number">3</span>,</span><br><span class="line">    READY: <span class="number">4</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>5.缩写单词，根据当前命名法和出现的位置，所有字母的大小写与首字母的大小写保持一致</p>
+<h2 id="多使用解构赋值"><a href="#多使用解构赋值" class="headerlink" title="多使用解构赋值"></a>多使用解构赋值</h2><p>项目中多使用解构赋值，尽量少使用‘=’赋值</p>
+<h2 id="做项目的时候发现遗漏点时用笔记住"><a href="#做项目的时候发现遗漏点时用笔记住" class="headerlink" title="做项目的时候发现遗漏点时用笔记住"></a>做项目的时候发现遗漏点时用笔记住</h2><p>因为做项目时开发时，可能开发很多的模块。有时候为了赶进度需要把模块的大体结构写好，这是想起其他模块的遗漏需求就需要用笔记下来，还有爱神给提出的关键点（划重点…）。这样做完大体模块后回头写一写细节的时候就不容易遗漏了。</p>
+<h2 id="下一期目标学习微信小程序，React"><a href="#下一期目标学习微信小程序，React" class="headerlink" title="下一期目标学习微信小程序，React"></a>下一期目标学习微信小程序，React</h2><p>等需求完成后需要自学这些，并且注意<code>React</code>的<code>JSX</code>（爱神提了一嘴，我不会React = =！以后学习的时候注意学习一下）</p>
 
     
   </div>
@@ -296,7 +299,7 @@
   <span id="cover" class="cover hide"></span>
   <div id="modal-dialog" class="modal-dialog hide-dialog">
     <div class="modal-header">
-      <span id="close" class="btn-close">关闭</span>
+      <span id="close" class="btn-close">Close</span>
     </div>
     <hr>
     <div class="modal-body">
