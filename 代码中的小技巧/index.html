@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>项目一期心得 | myBlog</title>
+  <title>代码中的小技巧 | myBlog</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -15,16 +15,16 @@
     <meta name="keywords" content="ES6,前端" />
   
 
-  <meta name="description" content="在场景端做的第一项目的一期内容后很多的感悟。首先，从代码规范上来讲，自己写的代码太随心所欲。从整洁度上来说，不利于代码的可读性。 注释以及多余的代码没有及时的删除由于刚开始写项目交互时先写好了注释内容，但在项目进行时，发现有的方法多余，开发后忘记删除旧的注释内容，导致别人读取代码时逻辑混淆。使用完console和debugger时要记住删除，不然会暴露代码。尽量使用页面打断点的方法。 严格遵循代码">
+  <meta name="description" content="Underscore和LodashUnderscore一个JavaScript实用库，提供了一整套函数式编程的实用功能，但是没有扩展任何JavaScript内置对象。对于写Node处理数据，使用起来非常的方便。 +new Date()加号是一个很好的转换符号，我们都知道在js当中使用+的时候，js会先把数据内容转换成Number类型，如果转换失败将会是NAN。所以在有些需要转换Number的时候，">
 <meta property="og:type" content="article">
-<meta property="og:title" content="项目一期心得">
-<meta property="og:url" content="http://weileilei.top/项目一期心得/index.html">
+<meta property="og:title" content="代码中的小技巧">
+<meta property="og:url" content="http://weileilei.top/代码中的小技巧/index.html">
 <meta property="og:site_name" content="myBlog">
-<meta property="og:description" content="在场景端做的第一项目的一期内容后很多的感悟。首先，从代码规范上来讲，自己写的代码太随心所欲。从整洁度上来说，不利于代码的可读性。 注释以及多余的代码没有及时的删除由于刚开始写项目交互时先写好了注释内容，但在项目进行时，发现有的方法多余，开发后忘记删除旧的注释内容，导致别人读取代码时逻辑混淆。使用完console和debugger时要记住删除，不然会暴露代码。尽量使用页面打断点的方法。 严格遵循代码">
-<meta property="og:updated_time" content="2018-05-09T14:58:26.079Z">
+<meta property="og:description" content="Underscore和LodashUnderscore一个JavaScript实用库，提供了一整套函数式编程的实用功能，但是没有扩展任何JavaScript内置对象。对于写Node处理数据，使用起来非常的方便。 +new Date()加号是一个很好的转换符号，我们都知道在js当中使用+的时候，js会先把数据内容转换成Number类型，如果转换失败将会是NAN。所以在有些需要转换Number的时候，">
+<meta property="og:updated_time" content="2018-05-21T08:22:28.673Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="项目一期心得">
-<meta name="twitter:description" content="在场景端做的第一项目的一期内容后很多的感悟。首先，从代码规范上来讲，自己写的代码太随心所欲。从整洁度上来说，不利于代码的可读性。 注释以及多余的代码没有及时的删除由于刚开始写项目交互时先写好了注释内容，但在项目进行时，发现有的方法多余，开发后忘记删除旧的注释内容，导致别人读取代码时逻辑混淆。使用完console和debugger时要记住删除，不然会暴露代码。尽量使用页面打断点的方法。 严格遵循代码">
+<meta name="twitter:title" content="代码中的小技巧">
+<meta name="twitter:description" content="Underscore和LodashUnderscore一个JavaScript实用库，提供了一整套函数式编程的实用功能，但是没有扩展任何JavaScript内置对象。对于写Node处理数据，使用起来非常的方便。 +new Date()加号是一个很好的转换符号，我们都知道在js当中使用+的时候，js会先把数据内容转换成Number类型，如果转换失败将会是NAN。所以在有些需要转换Number的时候，">
 
   
 
@@ -183,20 +183,20 @@
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#注释以及多余的代码没有及时的删除"><span class="toc-text">注释以及多余的代码没有及时的删除</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#严格遵循代码命名规则"><span class="toc-text">严格遵循代码命名规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#多使用解构赋值"><span class="toc-text">多使用解构赋值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#做项目的时候发现遗漏点时用笔记住"><span class="toc-text">做项目的时候发现遗漏点时用笔记住</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#下一期目标学习微信小程序，React"><span class="toc-text">下一期目标学习微信小程序，React</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Underscore和Lodash"><span class="toc-text">Underscore和Lodash</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#new-Date"><span class="toc-text">+new Date()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ES6字符串拼接"><span class="toc-text">ES6字符串拼接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#for循环"><span class="toc-text">for循环</span></a></li></ol>
   </div>
 
 
 
 <div class="content content-post CENTER">
-   <article id="post-项目一期心得" class="article article-type-post" itemprop="blogPost">
+   <article id="post-代码中的小技巧" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">项目一期心得</h1>
+    <h1 class="post-title">代码中的小技巧</h1>
 
     <div class="article-meta">
       <span>
         <i class="icon-calendar"></i>
-        <span>2018.04.25</span>
+        <span>2018.05.21</span>
       </span>
 
       
@@ -212,7 +212,7 @@
       
         <span>
           <i class="icon-comment"></i>
-          <a href="http://www.forsigner.com/项目一期心得/#disqus_thread"></a>
+          <a href="http://www.forsigner.com/代码中的小技巧/#disqus_thread"></a>
         </span>
       
 
@@ -229,14 +229,12 @@
 
   <div class="article-content">
     
-      <p>在场景端做的第一项目的一期内容后很多的感悟。<br>首先，从代码规范上来讲，自己写的代码太随心所欲。从整洁度上来说，不利于代码的可读性。</p>
-<h2 id="注释以及多余的代码没有及时的删除"><a href="#注释以及多余的代码没有及时的删除" class="headerlink" title="注释以及多余的代码没有及时的删除"></a>注释以及多余的代码没有及时的删除</h2><p>由于刚开始写项目交互时先写好了注释内容，但在项目进行时，发现有的方法多余，开发后忘记删除旧的注释内容，导致别人读取代码时逻辑混淆。<br>使用完console和debugger时要记住删除，不然会暴露代码。尽量使用页面打断点的方法。</p>
-<h2 id="严格遵循代码命名规则"><a href="#严格遵循代码命名规则" class="headerlink" title="严格遵循代码命名规则"></a>严格遵循代码命名规则</h2><p>1.变量名使用Camel命名法<br>2.常量使用<code>全部字母大写</code>，<code>单词下划线分割</code>的命名方法<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> HTML_DIV</span><br></pre></td></tr></table></figure></p>
-<p>3.函数、函数的参数、类的属性、方法使用Camel命名法<br>4.类、枚举变量使用Pascal命名法<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span>  TargetState= &#123;</span><br><span class="line">    READING: <span class="number">1</span>,</span><br><span class="line">    READED: <span class="number">2</span>,</span><br><span class="line">    APPLIED: <span class="number">3</span>,</span><br><span class="line">    READY: <span class="number">4</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>5.缩写单词，根据当前命名法和出现的位置，所有字母的大小写与首字母的大小写保持一致</p>
-<h2 id="多使用解构赋值"><a href="#多使用解构赋值" class="headerlink" title="多使用解构赋值"></a>多使用解构赋值</h2><p>项目中多使用解构赋值，尽量少使用‘=’赋值</p>
-<h2 id="做项目的时候发现遗漏点时用笔记住"><a href="#做项目的时候发现遗漏点时用笔记住" class="headerlink" title="做项目的时候发现遗漏点时用笔记住"></a>做项目的时候发现遗漏点时用笔记住</h2><p>因为做项目时开发时，可能开发很多的模块。有时候为了赶进度需要把模块的大体结构写好，这是想起其他模块的遗漏需求就需要用笔记下来，还有爱神给提出的关键点（划重点…）。这样做完大体模块后回头写一写细节的时候就不容易遗漏了。</p>
-<h2 id="下一期目标学习微信小程序，React"><a href="#下一期目标学习微信小程序，React" class="headerlink" title="下一期目标学习微信小程序，React"></a>下一期目标学习微信小程序，React</h2><p>等需求完成后需要自学这些，并且注意<code>React</code>的<code>JSX</code>（爱神提了一嘴，我不会React = =！以后学习的时候注意学习一下）</p>
+      <h2 id="Underscore和Lodash"><a href="#Underscore和Lodash" class="headerlink" title="Underscore和Lodash"></a>Underscore和Lodash</h2><p>Underscore一个JavaScript实用库，提供了一整套函数式编程的实用功能，但是没有扩展任何JavaScript内置对象。对于写Node处理数据，使用起来非常的方便。</p>
+<h2 id="new-Date"><a href="#new-Date" class="headerlink" title="+new Date()"></a>+new Date()</h2><p>加号是一个很好的转换符号，我们都知道在js当中使用<code>+</code>的时候，js会先把数据内容转换成<code>Number</code>类型，如果转换失败将会是NAN。<br>所以在有些需要转换<code>Number</code>的时候，<code>+</code>还是十分好用的。<br> +new Date 将会调用 Date.prototype 上的 valueOf 方法，而根据 MDN ，Date.prototype.value 方法等同于 Date.prototype.getTime() 。</p>
+ <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(+<span class="keyword">new</span> <span class="built_in">Date</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">new</span> <span class="built_in">Date</span>().getTime());</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">new</span> <span class="built_in">Date</span>().valueOf());</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">new</span> <span class="built_in">Date</span>() * <span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="ES6字符串拼接"><a href="#ES6字符串拼接" class="headerlink" title="ES6字符串拼接"></a>ES6字符串拼接</h2> <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="built_in">Date</span>(+<span class="string">`<span class="subst">$&#123;timenString&#125;</span>000`</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h2><p> for循环中，如果遇见了break语句，这个for循环就会立即终止，不在进行其他的迭代了。<br> break语句只能跳出当前所在的最内层循环，如果你这个break就是想终止所有的循环，那么JS中允许你给循环语句加label</p>
+ <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">//break只能终止内层循环，但是我们就是想要终止外层循环</span></span><br><span class="line"> </span><br><span class="line"><span class="comment">//就要给外层循环加label：</span></span><br><span class="line"> </span><br><span class="line">waiceng : <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">1</span> ; i &lt;= <span class="number">10</span> ; i++) &#123;</span><br><span class="line"> </span><br><span class="line">　　 <span class="keyword">for</span>(<span class="keyword">var</span> j = <span class="number">1</span> ; j &lt;= <span class="number">10</span> ; j++) &#123;</span><br><span class="line"> </span><br><span class="line">　　　　 <span class="built_in">console</span>.log(i,j);</span><br><span class="line"> </span><br><span class="line">　　　　<span class="keyword">if</span>(j == <span class="number">5</span>) &#123;</span><br><span class="line"> </span><br><span class="line">　　　　 <span class="keyword">break</span> waiceng; <span class="comment">//break label的语法</span></span><br><span class="line"> </span><br><span class="line">　　　　 &#125;</span><br><span class="line"> </span><br><span class="line">　　 &#125;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
     
   </div>
@@ -274,10 +272,10 @@
 
    
   <div class="box-prev-next clearfix">
-    <a class="show pull-left" href="/初学Node，总结一些分散点/">
+    <a class="show pull-left" href="/js的对象是无序的/">
         <i class="icon icon-angle-left"></i>
     </a>
-    <a class="show pull-right" href="/一个不错的写法/">
+    <a class="show pull-right" href="/远程同步代码的工具/">
         <i class="icon icon-angle-right"></i>
     </a>
   </div>
@@ -402,7 +400,7 @@
   <script>
     var disqus_shortname = 'forsigner';
     
-    var disqus_url = 'http://weileilei.top/项目一期心得/';
+    var disqus_url = 'http://weileilei.top/代码中的小技巧/';
     
     (function(){
       var dsq = document.createElement('script');

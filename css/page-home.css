@@ -26,6 +26,7 @@ html.page-archives {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  background-attachment:fixed
 }
 html.page-tag,html.page-category,html.page-about {
   position: absolute;
@@ -38,6 +39,7 @@ html.page-tag,html.page-category,html.page-about {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  background-attachment:fixed
 }
 
 .article-type-post {
